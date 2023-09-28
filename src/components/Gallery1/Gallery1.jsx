@@ -23,30 +23,53 @@ const Gallery1 = () => {
   }
 
   return (
+    <>
     <div className="app__gallery flex__center" id="galerija">
+
+     
       <div className="app__gallery-content">
-        <SubHeading title="Instagram" />
-        <h1 className="headtext__cormorant">Foto Galerija</h1>
-        <p className="p__opensans">
-          Berlin u srcu grada Šapca. Za još slika možete posetiti naš instagram ili facebook profil.
-        </p>
-        <div className="btns">
-          <button
-            onClick={() => window.open("https://www.instagram.com/kaffe_berlin/", "_blank")}
-            className="custom__button"
-            type="button"
-          >Instagram
 
-          </button>
-          <button
-            onClick={() => window.open("https://www.instagram.com/kaffe_berlin/", "_blank")}
-            className="custom__button"
-            type="button"
-          >Facebook
+        
+            <div className="rotating_logo_container">
+              <img className="rotating-logo" src={images.logo1} alt="logo" />
+            </div>
 
-          </button>
-        </div>
-      </div>
+
+
+                    <SubHeading title="Instagram" />
+                    <h1 className="headtext__cormorant">Foto Galerija</h1>
+                    <p className="p__opensans">
+                      Berlin u srcu grada Šapca. Za još slika možete posetiti naš instagram ili facebook profil.
+                    </p>
+                    <div className="btns">
+                      <button
+                        onClick={() => window.open("https://www.instagram.com/kaffe_berlin/", "_blank")}
+                        className="custom__button"
+                        type="button"
+                      >Instagram
+
+                      </button>
+                      <button
+                        onClick={() => window.open("https://www.instagram.com/kaffe_berlin/", "_blank")}
+                        className="custom__button"
+                        type="button"
+                      >Facebook
+
+                      </button>
+
+
+               
+
+
+                    </div>
+
+     
+
+     
+  </div>     
+
+    
+
 
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
@@ -63,7 +86,12 @@ const Gallery1 = () => {
         </div>
 
       </div>
+
+            
     </div >
+
+
+</>
   );
 };
 

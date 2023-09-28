@@ -107,6 +107,20 @@
 }
 
 
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotating-logo {
+    width: 120px!important ;
+        animation: rotate 5s linear infinite; /* Adjust the duration and timing as needed */
+        padding-bottom: 20px;
+  }
 
 
 

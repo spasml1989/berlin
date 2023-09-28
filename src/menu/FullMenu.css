@@ -137,25 +137,7 @@
 
 
 
-@keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .rotating-logo {
-    width: 202px!important ;
-        animation: rotate 5s linear infinite; /* Adjust the duration and timing as needed */
-  }
 
-.mobile,
-.mobile_contianer_logo
-{
-    display: none;
-}
 
 
 
@@ -168,13 +150,13 @@
         width: 100%;
     }
 
-    .rotating-logo {
+    /* .rotating-logo {
             display: none;
-    }
+    } */
 
-    .mobile {
+    /* .mobile {
         display: block;
-    }
+    } */
 
     .mobile_contianer_logo {
         display: flex;

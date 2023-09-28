@@ -7,6 +7,8 @@ import semafor from '../assets/semafor.png'
 import zelenis from '../assets/zelenis.png'
 import dezert from '../assets/dezert.png'
 
+import logo_header from "../assets/logo_header.svg"
+
 
 
 
@@ -20,7 +22,8 @@ export default {
  zelenis,
  mango,
  pahuljice,
- semafor
+ semafor,
+ logo_header
 
 
 
