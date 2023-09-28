@@ -1,5 +1,5 @@
 {
-  "homepage": "https://spasml1989.github.io/berlin_caffe_menu",
+  "homepage": "https://spasml1989.github.io/berlin",
   "name": "berlin",
   "version": "0.1.0",
   "private": true,
@@ -38,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
