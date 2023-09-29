@@ -122,6 +122,11 @@
         padding-bottom: 20px;
   }
 
+  .rotating_logo_container_mobile {
+    display: none;
+  }
+
+ 
 
 
 @media screen  and (max-width: 2000px) {
@@ -175,5 +180,26 @@
         display: flex;
         flex-direction: column;
     }
+
+
+
+    .rotating_logo_container {
+        display: none;
+    }
+
+    .rotating_logo_container_mobile {
+        display: block;
+         /* margin-top: 7px;
+        margin-left: 10px;  */
+      }
+
+      .rotating-logo {
+        width: 100px!important;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
 
 }
