@@ -1,7 +1,11 @@
 {
   "files": {
-    "main.css": "/berlin/static/css/main.3a59d551.css",
-    "main.js": "/berlin/static/js/main.a0e31e6e.js",
+    "main.css": "/berlin/static/css/main.376ae227.css",
+    "main.js": "/berlin/static/js/main.2cb5d49f.js",
+    "static/media/brenner_no_good_bye.mp3": "/berlin/static/media/brenner_no_good_bye.841aec2e4423c90e4046.mp3",
+    "static/media/gta.mp3": "/berlin/static/media/gta.3cd18c814086be7ba486.mp3",
+    "static/media/purple_disco.mp3": "/berlin/static/media/purple_disco.a283b53362b90db283b0.mp3",
+    "static/media/Aaron.mp3": "/berlin/static/media/Aaron.e0f93e59d7b6bbc07558.mp3",
     "static/media/cvekla.png": "/berlin/static/media/cvekla.0a5bcf8ff526c3c778b6.png",
     "static/media/pahuljice.png": "/berlin/static/media/pahuljice.e0dac115e57906b9546f.png",
     "static/media/semafor.png": "/berlin/static/media/semafor.699789c42b0c31b9e1cd.png",
@@ -9,13 +13,14 @@
     "static/media/mango.png": "/berlin/static/media/mango.388070f79f0cbcf306fc.png",
     "static/media/dezert.png": "/berlin/static/media/dezert.b088fd5baf4d89097325.png",
     "static/media/logo1.svg": "/berlin/static/media/logo1.6dd55684a60deaae58fd9c63babd633b.svg",
+    "static/media/logo_header.svg": "/berlin/static/media/logo_header.73e4c6d7e94caa5f3a40b7287d6433ea.svg",
     "static/media/logo.svg": "/berlin/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/berlin/index.html",
-    "main.3a59d551.css.map": "/berlin/static/css/main.3a59d551.css.map",
-    "main.a0e31e6e.js.map": "/berlin/static/js/main.a0e31e6e.js.map"
+    "main.376ae227.css.map": "/berlin/static/css/main.376ae227.css.map",
+    "main.2cb5d49f.js.map": "/berlin/static/js/main.2cb5d49f.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a59d551.css",
-    "static/js/main.a0e31e6e.js"
+    "static/css/main.376ae227.css",
+    "static/js/main.2cb5d49f.js"
   ]
 }
