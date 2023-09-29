@@ -70,21 +70,21 @@ const FullMenu = () => {
                         <select className="form-select" value={drink} onChange={handleOnChange} >
                             <option value="selectDrink">Izaberite iz menija</option>
 
-                            <option value="coffe">Kafe / topli napici </option>
-                            <option value="mutilice_cedjeni">Slatke mutilice / cedjeni sokovi</option>
-                            <option value="Riblji specijaliteti čorbe i potaži">Riblji specijaliteti čorbe i potaži</option>
-                            <option value="Bezalkoholna pića">Bezalkoholna pića</option>
-                            <option value="Alkoholna pića">Alkoholna pića</option>
-                            <option value="Kuća vina">Kuća vina</option>
-                            <option value="Dezerti">Dezerti</option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="coffe">Kafe / topli napici </option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="mutilice_cedjeni">Slatke mutilice / cedjeni sokovi</option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="Riblji specijaliteti čorbe i potaži">Riblji specijaliteti čorbe i potaži</option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="Bezalkoholna pića">Bezalkoholna pića</option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="Alkoholna pića">Alkoholna pića</option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="Kuća vina">Kuća vina</option>
+                            <option  style={{ backgroundColor: 'black', color: 'white' }} value="Dezerti">Dezerti</option>
                         </select>
                     </div>
 
-                    <div className="mobile_contianer_logo">
+                    {/* <div className="mobile_contianer_logo">
 
                     <img className="rotating-logo mobile" src={images.logo1} alt="logo" />
 
-                    </div>   
+                    </div>    */}
 
                 
                 </div>
@@ -122,7 +122,7 @@ const FullMenu = () => {
 
                    <div className="app__specialMenu-menu_img">
 
-                        <img className="rotating-logo" src={images.logo1} alt="logo" />
+                        {/* <img className="rotating-logo" src={images.logo1} alt="logo" /> */}
 
                 </div>
 

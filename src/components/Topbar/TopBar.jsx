@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import  { MdOutlineRestaurantMenu } from 'react-icons/md'
 import useScrollListener from "../useScrollListener/index";
 
+import {  data, images  } from '../../constants';
 
 
 
@@ -35,33 +36,12 @@ const Navbar = () => {
 
     <nav className={navClassList.join(" ")}>
       <div className="app__navbar-logo" >
-        <p className="logo">Caffe Berlin</p>
+        {/* <p className="logo">Caffe Berlin</p> */}
 
+            <img src={images.logo_header} alt="logo header"  />
       </div>
 
-      {/* <ul className="app__navbar-links">
-
-        <li className="p__opensans">
-
-          <a  href={`${process.env.PUBLIC_URL}/#home`}>Početna</a>
-
-        </li>
-
-        <li className="p__opensans">
-
-          <a  href={`${process.env.PUBLIC_URL}/#o_nama`}>O nama</a>
-
-        </li>
-
-        <li className="p__opensans">
-
-          <a  href={`${process.env.PUBLIC_URL}/#menu`}>Meni</a>
-
-        </li>
-        <li className="p__opensans"><a  href={`${process.env.PUBLIC_URL}/#nasa_prica`}>Naša priča</a></li>
-        <li className="p__opensans"><a  href={`${process.env.PUBLIC_URL}/#galerija`}>Galerija</a></li>
-        <li className="p__opensans"><a   href={`${process.env.PUBLIC_URL}/#contact`}>Kontakt</a></li>
-      </ul> */}
+   
 
       <div className="app__navbar-login">
         <a href="#login" className="p__opensans">Prijava / Registracija</a>
