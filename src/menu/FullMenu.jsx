@@ -93,12 +93,12 @@ const FullMenu = () => {
                         <select className="form-select" value={drink} onChange={handleOnChange} >
                             <option value="selectDrink">Izaberite iz menija</option>
 
-                            <option style={{ backgroundColor: 'black', color: 'white',  }} value="coffe">Kafe / topli napici </option>
-                            <option style={{ backgroundColor: 'black', color: 'white', wordBreak: 'keep-all' }} value="mutilice_cedjeni">Slatke mutilice i cedjeni sokovi</option>
+                            <option style={{ backgroundColor: 'black', color: 'white', whiteSpace:'nowrap!important'  }} value="coffe">Kafe / topli napici </option>
+                            <option style={{ backgroundColor: 'black', color: 'white',   }} value="mutilice_cedjeni">Mutilice, prirodni sokovi</option>
                             <option style={{ backgroundColor: 'black', color: 'white' }} value="mineralne_sokovi">Mineralne vode i sokovi</option>
                             <option style={{ backgroundColor: 'black', color: 'white' }} value="zdrava_prica_smoothie">Zdrava priča, smoothie</option>
                             <option style={{ backgroundColor: 'black', color: 'white' }} value="dorucak_paketi">Dorucak / paketi</option>
-                            <option style={{ backgroundColor: 'black', color: 'white' }} value="razonoda_berlin">Razonoda / Berlin Manifacture</option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="razonoda_berlin">Razonoda, Berlin Manifacture</option>
                             <option style={{ backgroundColor: 'black', color: 'white' }} value="vina_cider">Vina / Cider</option>
                             <option style={{ backgroundColor: 'black', color: 'white' }} value="zestina">Žestoka pića</option>
 
