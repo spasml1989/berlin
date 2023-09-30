@@ -83,29 +83,31 @@
 
   select option[value="selectDrink"] {
     background: #0C0C0C;
+
   }
-  select option[value="Doručak i dnevna kuvana jela"] {
+  select option[value="coffe"] {
     background: #0C0C0C;
   }
   
-  select option[value="Jela sa roštilja i salate"] {
+  select option[value="mutilice_cedjeni"] {
+    background: #0C0C0C;
+   
+  }
+  
+  select option[value="mineralne_sokovi"] {
     background: #0C0C0C;
   }
   
-  select option[value="Riblji specijaliteti čorbe i potaži"] {
-    background: #0C0C0C;
-  }
-  
-  select option[value="Bezalkoholna pića"] {
+  select option[value="zdrava_prica_smoothie"] {
     background: #0C0C0C;
   }
 
-    select option[value="Alkoholna pića"] {
+    select option[value="dorucak_paketi"] {
         background: #0C0C0C;
 
 
     }
-        select option[value="Kuća vina"] {
+        select option[value="razonoda_berlin"] {
             background: #0C0C0C;
 
         }

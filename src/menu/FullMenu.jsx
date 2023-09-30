@@ -24,15 +24,38 @@ const FullMenu = () => {
     const [coffeVisible, setCoffeVisible] = useState(false);
 
     const [mutilice_cedjeniVisible, setMutilice_cedjeniVisible] = useState(false);
- 
+    const [mineralneSokoviVisible, setMineralneSokoviVisible] = useState(false);
+    const [smoothieZdravaPricaVisible, setSmoothieZdravaPricaVisible] = useState(false);
+    const [dorucakPaketivisible, setDorucakPaketiVisible ] = useState(false)
+    const [razonodaBerlinManifacture, setRazonodaBerlinManifacture ] = useState(false);
 
+    const [vinaCider, setVinaCider] = useState(false);
+
+    const [zestokaVisible, setZestokaVisible] = useState(false);
+    const [pivaKokteliVisible, setPivaKokteliVisible] = useState(false);
+
+ 
 
 
     useEffect(() => {
         drink === "selectDrink" ? setDefaultDrinkVisible(true) : setDefaultDrinkVisible(false);
         drink === "coffe" ? setCoffeVisible(true) : setCoffeVisible(false);
         drink === "mutilice_cedjeni" ? setMutilice_cedjeniVisible(true) : setMutilice_cedjeniVisible(false);
-      
+        drink === "mineralne_sokovi" ? setMineralneSokoviVisible(true) : setMineralneSokoviVisible(false);
+        drink === "zdrava_prica_smoothie" ? setSmoothieZdravaPricaVisible(true) : setSmoothieZdravaPricaVisible(false);
+
+        drink === "dorucak_paketi" ? setDorucakPaketiVisible(true) : setDorucakPaketiVisible(false);
+
+        drink === "razonoda_berlin" ? setRazonodaBerlinManifacture(true) : setRazonodaBerlinManifacture(false);
+
+        drink === "vina_cider" ? setVinaCider(true) : setVinaCider(false);
+
+        drink === "zestina" ? setZestokaVisible(true) : setZestokaVisible(false);
+
+        drink === "piva_kokteli" ? setPivaKokteliVisible(true) : setPivaKokteliVisible(false);
+
+
+
     }, [drink]);
 
     const handleOnChange = (e) => {
@@ -66,17 +89,21 @@ const FullMenu = () => {
 
                     
 
-                    <div className="custom-select">
+                    <div  className="custom-select">
                         <select className="form-select" value={drink} onChange={handleOnChange} >
                             <option value="selectDrink">Izaberite iz menija</option>
 
-                            <option style={{ backgroundColor: 'black', color: 'white' }} value="coffe">Kafe / topli napici </option>
-                            <option style={{ backgroundColor: 'black', color: 'white' }} value="mutilice_cedjeni">Slatke mutilice / cedjeni sokovi</option>
-                            <option style={{ backgroundColor: 'black', color: 'white' }} value="Riblji specijaliteti čorbe i potaži">Riblji specijaliteti čorbe i potaži</option>
-                            <option style={{ backgroundColor: 'black', color: 'white' }} value="Bezalkoholna pića">Bezalkoholna pića</option>
-                            <option style={{ backgroundColor: 'black', color: 'white' }} value="Alkoholna pića">Alkoholna pića</option>
-                            <option style={{ backgroundColor: 'black', color: 'white' }} value="Kuća vina">Kuća vina</option>
-                            <option  style={{ backgroundColor: 'black', color: 'white' }} value="Dezerti">Dezerti</option>
+                            <option style={{ backgroundColor: 'black', color: 'white',  }} value="coffe">Kafe / topli napici </option>
+                            <option style={{ backgroundColor: 'black', color: 'white', wordBreak: 'keep-all' }} value="mutilice_cedjeni">Slatke mutilice i cedjeni sokovi</option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="mineralne_sokovi">Mineralne vode i sokovi</option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="zdrava_prica_smoothie">Zdrava priča, smoothie</option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="dorucak_paketi">Dorucak / paketi</option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="razonoda_berlin">Razonoda / Berlin Manifacture</option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="vina_cider">Vina / Cider</option>
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="zestina">Žestoka pića</option>
+
+                            <option style={{ backgroundColor: 'black', color: 'white' }} value="piva_kokteli">Piva / kokteli</option>
+
                         </select>
                     </div>
 
@@ -114,6 +141,43 @@ const FullMenu = () => {
                                 <MenuItem key={slatke_mutilice.title + index} title={slatke_mutilice.title} price={slatke_mutilice.price} tags={slatke_mutilice.tags} />
                             ))} 
 
+                            {mineralneSokoviVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Mineralne Vode</p>}
+                            {mineralneSokoviVisible && data.mineralne_vode?.map((mineralne_vode, index) => (
+                                <MenuItem key={mineralne_vode.title + index} title={mineralne_vode.title} price={mineralne_vode.price} tags={mineralne_vode.tags} />
+                            ))} 
+
+
+                            {smoothieZdravaPricaVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Smoothie</p>}
+                            {smoothieZdravaPricaVisible && data.smoothie?.map((smoothie, index) => (
+                                <MenuItem key={smoothie.title + index} title={smoothie.title} price={smoothie.price} tags={smoothie.tags} />
+                            ))} 
+
+                            {dorucakPaketivisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Doručak</p>}
+                            {dorucakPaketivisible && data.dorucak?.map((dorucak, index) => (
+                                <MenuItem key={dorucak.title + index} title={dorucak.title} price={dorucak.price} tags={dorucak.tags} />
+                            ))} 
+
+                            {razonodaBerlinManifacture && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Razonoda</p>}
+                            {razonodaBerlinManifacture && data.razonoda?.map((razonoda, index) => (
+                                <MenuItem key={razonoda.title + index} title={razonoda.title} price={razonoda.price} tags={razonoda.tags} />
+                            ))} 
+
+                            {vinaCider && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Vino Rose / Belo</p>}
+                            {vinaCider && data.vina?.map((vina, index) => (
+                                <MenuItem key={vina.title + index} title={vina.title} price={vina.price} tags={vina.tags} />
+                            ))} 
+
+                            {zestokaVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Žestoka pića</p>}
+                            {zestokaVisible && data.zestina?.map((zestina, index) => (
+                                <MenuItem key={zestina.title + index} title={zestina.title} price={zestina.price} tags={zestina.tags} />
+                            ))} 
+
+
+                            {pivaKokteliVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Pivo</p>}
+                            {pivaKokteliVisible && data.piva?.map((piva, index) => (
+                                <MenuItem key={piva.title + index} title={piva.title} price={piva.price} tags={piva.tags} />
+                            ))} 
+
                         </div>
 
 
@@ -149,9 +213,58 @@ const FullMenu = () => {
                                 <MenuItem key={cedjeni_sokovi.title + index} title={cedjeni_sokovi.title} price={cedjeni_sokovi.price} tags={cedjeni_sokovi.tags} />
                             ))} 
 
+                            {mineralneSokoviVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Sokovi</p>}
+                            {mineralneSokoviVisible && data.sokovi?.map((sokovi, index) => (
+                                <MenuItem key={sokovi.title + index} title={sokovi.title} price={sokovi.price} tags={sokovi.tags} />
+                            ))} 
+
+
+                            {smoothieZdravaPricaVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Zdrava priča slatko</p>}
+                            {smoothieZdravaPricaVisible && data.zdrava_prica_slatko?.map((zdrava_prica_slatko, index) => (
+                                <MenuItem key={zdrava_prica_slatko.title + index} title={zdrava_prica_slatko.title} price={zdrava_prica_slatko.price} tags={zdrava_prica_slatko.tags} />
+                            ))} 
+
+
+                            {dorucakPaketivisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Paketi</p>}
+                            {dorucakPaketivisible && data.paketi?.map((paketi, index) => (
+                                <MenuItem key={paketi.title + index} title={paketi.title} price={paketi.price} tags={paketi.tags} />
+                            ))} 
                     
 
+                    {razonodaBerlinManifacture && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Berlin Manifacture</p>}
+                            {razonodaBerlinManifacture && data.berlin_manifacture?.map((berlin_manifacture, index) => (
+                                <MenuItem key={berlin_manifacture.title + index} title={berlin_manifacture.title} price={berlin_manifacture.price} tags={berlin_manifacture.tags} />
+                            ))} 
 
+
+                    {vinaCider && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Crno vino</p>}
+                            {vinaCider && data.vina_crvena?.map((vina_crvena, index) => (
+                                <MenuItem key={vina_crvena.title + index} title={vina_crvena.title} price={vina_crvena.price} tags={vina_crvena.tags} />
+                            ))}
+
+                    {vinaCider && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Cider</p>}
+                            {vinaCider && data.cider?.map((cider, index) => (
+                                <MenuItem key={cider.title + index} title={cider.title} price={cider.price} tags={cider.tags} />
+                            ))}
+
+
+
+                            {zestokaVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Rakije sa Cera</p>}
+                            {zestokaVisible && data.rakije_sa_cera?.map((rakije_sa_cera, index) => (
+                                <MenuItem key={rakije_sa_cera.title + index} title={rakije_sa_cera.title} price={rakije_sa_cera.price} tags={rakije_sa_cera.tags} />
+                            ))}             
+
+
+                            {zestokaVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Aperitivi</p>}
+                            {zestokaVisible && data.aperitivi?.map((aperitivi, index) => (
+                                <MenuItem key={aperitivi.title + index} title={aperitivi.title} price={aperitivi.price} tags={aperitivi.tags} />
+                            ))}  
+
+
+{pivaKokteliVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Kokteli</p>}
+                            {pivaKokteliVisible && data.kokteli?.map((kokteli, index) => (
+                                <MenuItem key={kokteli.title + index} title={kokteli.title} price={kokteli.price} tags={kokteli.tags} />
+                            ))} 
 
                         </div>
 
