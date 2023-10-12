@@ -141,6 +141,13 @@ const FullMenu = () => {
                                 <MenuItem key={slatke_mutilice.title + index} title={slatke_mutilice.title} price={slatke_mutilice.price} tags={slatke_mutilice.tags} />
                             ))} 
 
+                            {mutilice_cedjeniVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Trening</p>}
+                            {mutilice_cedjeniVisible && data.trening?.map((trening, index) => (
+                                <MenuItem key={trening.title + index} title={trening.title} price={trening.price} tags={trening.tags} />
+                            ))}
+
+                        
+
                             {mineralneSokoviVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Mineralne Vode</p>}
                             {mineralneSokoviVisible && data.mineralne_vode?.map((mineralne_vode, index) => (
                                 <MenuItem key={mineralne_vode.title + index} title={mineralne_vode.title} price={mineralne_vode.price} tags={mineralne_vode.tags} />
@@ -201,9 +208,14 @@ const FullMenu = () => {
                             ))} 
 
                           
-                        {defaultDrinkVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Topli napici</p>}
+                             {defaultDrinkVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Topli napici</p>}
                             {defaultDrinkVisible && data.topli_napici.map((topli_napici, index) => (
                                 <MenuItem key={topli_napici.title + index} title={topli_napici.title} price={topli_napici.price} tags={topli_napici.tags} />
+                            ))}
+
+                             {defaultDrinkVisible && <p style={{ fontSize: '32px' }} className="app__specialMenu-menu_heading custom_p">Trening</p>}
+                            {defaultDrinkVisible && data.trening.map((trening, index) => (
+                                <MenuItem key={trening.title + index} title={trening.title} price={trening.price} tags={trening.tags} />
                             ))}
 
 

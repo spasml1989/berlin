@@ -739,4 +739,4 @@ const berlin_manifacture = [
 
 
 
-export default { coffe, topli_napici,  slatke_mutilice, mineralne_vode, smoothie, cedjeni_sokovi,  sokovi, zestina, piva, rakije_sa_cera, vina, vina_crvena, aperitivi, cider, kokteli, dorucak, zdrava_prica_slatko, razonoda, paketi, berlin_manifacture };
+export default { coffe, topli_napici, trening,  slatke_mutilice, mineralne_vode, smoothie, cedjeni_sokovi,  sokovi, zestina, piva, rakije_sa_cera, vina, vina_crvena, aperitivi, cider, kokteli, dorucak, zdrava_prica_slatko, razonoda, paketi, berlin_manifacture };
