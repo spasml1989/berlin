@@ -33,7 +33,7 @@ const coffe = [
     // tags: ' mineral water',
   },
   {
-    title: 'Domća kafa',
+    title: 'Domaća kafa',
     price: '120rsd',
     tags: ' Black coffe ',
   },
@@ -78,6 +78,17 @@ const topli_napici = [
     price: '210rsd',
     tags: '0,25L | glass ',
   },
+
+
+];
+
+const trening = [
+  {
+    title: 'Protein',
+    price: '250rsd',
+    tags: 'protein shake | 0.2',
+  },
+ 
 
 
 ];
