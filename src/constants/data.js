@@ -86,7 +86,7 @@ const trening = [
   {
     title: 'Protein',
     price: '250rsd',
-    tags: 'protein shake | 0.2',
+    tags: 'protein shake | 0.3 L',
   },
  
 
